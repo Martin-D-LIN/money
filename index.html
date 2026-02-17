@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>東方靈數能量報告</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>東方靈數能量報告</h1>
+        <p>
+          以出生年月日為核心，結合數字總和（本命數）與九宮分佈觀察，生成個人化方向建議。
+        </p>
+      </header>
+
+      <section class="card">
+        <form id="numerology-form">
+          <label for="name">1. 使用者姓名</label>
+          <input id="name" name="name" type="text" placeholder="請輸入姓名" required />
+
+          <label for="phone">2. 電話</label>
+          <input id="phone" name="phone" type="tel" placeholder="請輸入電話" required />
+
+          <label for="birthday">3. 出生年月日（西元）</label>
+          <input id="birthday" name="birthday" type="date" required />
+
+          <label for="question">4. 想問的問題</label>
+          <textarea id="question" name="question" rows="4" placeholder="例如：今年適合轉職嗎？" required></textarea>
+
+          <button type="submit" class="primary-btn">計算靈數</button>
+        </form>
+      </section>
+
+      <section class="cta card highlighted">
+        <h2>加入「能量調頻室」</h2>
+        <p>獲取更多專屬建議，請加入官方 LINE。</p>
+        <a href="https://line.me/R/ti/p/@194kbsgm" target="_blank" rel="noopener noreferrer" class="line-btn">
+          前往加入 LINE（@194kbsgm）
+        </a>
+      </section>
+
+      <section id="report" class="card hidden">
+        <h2>你的東方靈數報告</h2>
+        <p id="base-number"></p>
+
+        <div class="report-grid">
+          <article>
+            <h3>1. 個人性格底層模式</h3>
+            <p id="personality"></p>
+          </article>
+          <article>
+            <h3>2. 財運與事業節奏</h3>
+            <p id="career"></p>
+          </article>
+          <article>
+            <h3>3. 人際與伴侶互動</h3>
+            <p id="relationship"></p>
+          </article>
+          <article>
+            <h3>4. 流年順逆</h3>
+            <p id="year-flow"></p>
+          </article>
+          <article>
+            <h3>5. 適合做什麼，不適合硬衝什麼</h3>
+            <p id="advice"></p>
+          </article>
+          <article>
+            <h3>6. 針對你的提問回應</h3>
+            <p id="question-response"></p>
+          </article>
+        </div>
+
+        <p>
+          7. LINE@ 連結（External Link）：
+          <a href="https://line.me/R/ti/p/@194kbsgm" target="_blank" rel="noopener noreferrer">
+            https://line.me/R/ti/p/@194kbsgm
+          </a>
+        </p>
+
+        <button id="send-data" class="secondary-btn">傳送預約資料</button>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
