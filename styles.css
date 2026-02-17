@@ -1,0 +1,115 @@
+:root {
+  color-scheme: light;
+  --bg: #fffaf2;
+  --card: #ffffff;
+  --text: #2f2a25;
+  --accent: #b06b00;
+  --accent-dark: #8f5600;
+  --line: #06c755;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", "PingFang TC", sans-serif;
+  background: linear-gradient(180deg, #fff7e6, #fff);
+  color: var(--text);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 20px;
+  margin-top: 18px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.07);
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #d9cec2;
+  padding: 10px 12px;
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button,
+.line-btn {
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.primary-btn {
+  margin-top: 16px;
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+}
+
+.primary-btn:hover {
+  background: var(--accent-dark);
+}
+
+.secondary-btn {
+  background: #3b3b3b;
+  color: white;
+  margin-top: 12px;
+}
+
+.highlighted {
+  border: 2px solid var(--line);
+  text-align: center;
+}
+
+.line-btn {
+  background: var(--line);
+  color: white;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.report-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 760px) {
+  .report-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
